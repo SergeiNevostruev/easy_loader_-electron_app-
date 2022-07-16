@@ -3,3 +3,4 @@
 
 Сделано на основе шаблона https://github.com/electron-react-boilerplate/electron-react-boilerplate.
 
+Для упаковки файлов нужен глобально установленный electron-builder.
