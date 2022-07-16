@@ -1,0 +1,59 @@
+@import '../../../vars.scss';
+.header {
+  user-select: none; 
+  grid-area: header;
+  background-color: $sub-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  & h1 {
+    -webkit-app-region: drag;
+    margin-left: 20px;
+    color: $text-color;
+  }  
+  & .Btn {
+    cursor: pointer;
+    margin-left: 20px;
+    & > span > svg {
+    height: 2em;
+    width: 2em;
+    fill: $text-color;
+    }
+
+  }
+  & .Btn:hover {
+    & > span > svg {
+      height: 2em;
+      width: 2em;
+      box-shadow: 4px 4px 8px 0px rgba(47, 147, 225, 0.2);
+      fill: black;
+    }
+  }
+  & .Btn:active {
+    & > span > svg {
+      box-shadow: none;
+    }
+  }
+  & .BtnPanel {
+    display: flex;
+
+  }
+}
+
+.container {
+  -webkit-app-region: drag;
+  max-width: $container;
+  display: flex;
+  justify-content: space-between;
+  & > .log {
+    display: flex;
+    align-items: center;            
+    & > span > svg {
+      height: 3em;
+      width: 3em;
+      fill: $text-color;
+    }
+  }
+}
